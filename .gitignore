@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+.venv/
+*.pyc
+# optional: keep models local-only until HF push
+# models/**/model.safetensors
+
+# Fused full models (~212MB each) — publish to Hugging Face, not GitHub
+models/**/model.safetensors
+models/**/*.gguf
