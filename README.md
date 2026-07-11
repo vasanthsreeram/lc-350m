@@ -6,8 +6,8 @@ It is fine-tuned from [LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM
 
 | Variant | Role | Local path / HF name |
 |---------|------|----------------------|
-| **LC-350M-light** | Light polish — keep wording, fix mess | `models/LC-350M-light` → `vasanthsreeram/LC-350M-light` |
-| **LC-350M-smart** | Course-correction — “bag no not bag, my phone” → “my phone” | `models/LC-350M-smart` → `vasanthsreeram/LC-350M-smart` |
+| **LC-350M-light** | Light polish — keep wording, fix mess | `models/LC-350M-light` → `vasanth009/LC-350M-light` |
+| **LC-350M-smart** | Course-correction — “bag no not bag, my phone” → “my phone” | `models/LC-350M-smart` → `vasanth009/LC-350M-smart` |
 
 > **Not the MacWispr app.** App: [vasanthsreeram/macwispr](https://github.com/vasanthsreeram/macwispr).  
 > This repo holds **training material, scripts, and model packaging** for LC-350M.
@@ -24,7 +24,7 @@ MacWispr polish modes (planned):
 
 ```bash
 pip install mlx-lm
-mlx_lm.generate --model vasanthsreeram/LC-350M-smart \
+mlx_lm.generate --model vasanth009/LC-350M-smart \
   --prompt "I wanna get the bag no not not bag my phone"
 ```
 
@@ -65,9 +65,9 @@ cd /Users/vas/Documents/lc-350m
 
 Creates/updates:
 
-- `https://huggingface.co/vasanthsreeram/LC-350M-light`
-- `https://huggingface.co/vasanthsreeram/LC-350M-smart`
-- `https://huggingface.co/vasanthsreeram/LC-350M-adapters` (optional LoRA pack)
+- `https://huggingface.co/vasanth009/LC-350M-light`
+- `https://huggingface.co/vasanth009/LC-350M-smart`
+- `https://huggingface.co/vasanth009/LC-350M-adapters` (optional LoRA pack)
 
 ## Links
 

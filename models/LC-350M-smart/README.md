@@ -30,13 +30,13 @@ Example:
 | I wanna get the bag no not not bag my phone | I want to get my phone. |
 | we should use Qwen wait no use Parakeet V3 | We should use Parakeet V3. |
 
-Use **[LC-350M-light](https://huggingface.co/vasanthsreeram/LC-350M-light)** for conservative polish without aggressive rewrites.
+Use **[LC-350M-light](https://huggingface.co/vasanth009/LC-350M-light)** for conservative polish without aggressive rewrites.
 
 ## Usage (MLX)
 
 ```bash
 pip install mlx-lm
-mlx_lm.generate --model vasanthsreeram/LC-350M-smart \
+mlx_lm.generate --model vasanth009/LC-350M-smart \
   --max-tokens 128 \
   --prompt "Clean this voice dictation into what the speaker finally meant.\n\nI wanna get the bag no not not bag my phone"
 ```
@@ -45,7 +45,7 @@ mlx_lm.generate --model vasanthsreeram/LC-350M-smart \
 
 - Training repo: [github.com/vasanthsreeram/lc-350m](https://github.com/vasanthsreeram/lc-350m)  
 - App: [github.com/vasanthsreeram/macwispr](https://github.com/vasanthsreeram/macwispr)  
-- Light variant: [LC-350M-light](https://huggingface.co/vasanthsreeram/LC-350M-light)
+- Light variant: [LC-350M-light](https://huggingface.co/vasanth009/LC-350M-light)
 
 ## License
 
