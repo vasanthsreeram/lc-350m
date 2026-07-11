@@ -45,12 +45,21 @@ Source experiments live under MacWispr `bench/polish_finetune/` and are mirrored
 
 See [training/RECIPE.md](./training/RECIPE.md).
 
+## Weights: GitHub vs Hugging Face
+
+| What | Where |
+|------|--------|
+| Training code, recipe, teacher pairs, **LoRA adapters (~6 MB)** | **This GitHub repo** |
+| Full fused MLX models (**~212 MB** each) | **Hugging Face only** (local `models/*/model.safetensors` is gitignored) |
+
 ## Publish to Hugging Face
 
 ```bash
-# one-time
+# one-time (use the terminal where you're logged into HF / cmux)
 hf auth login
+# or: export HF_TOKEN=hf_...
 
+cd /Users/vas/Documents/lc-350m
 ./scripts/publish_hf.sh
 ```
 
@@ -58,6 +67,7 @@ Creates/updates:
 
 - `https://huggingface.co/vasanthsreeram/LC-350M-light`
 - `https://huggingface.co/vasanthsreeram/LC-350M-smart`
+- `https://huggingface.co/vasanthsreeram/LC-350M-adapters` (optional LoRA pack)
 
 ## Links
 
